@@ -8,7 +8,7 @@ class MatrixMultiplier:
         self.matrixB = matrixB
 
 
-    def threads(self):
+    def threadedMultiplication(self):
         # Initialize the result matrix
         result = [[0] * len(self.matrixB[0]) for _ in range(len(self.matrixA))]
         times = [0] * len(self.matrixA)
@@ -17,7 +17,7 @@ class MatrixMultiplier:
         threads = []
         for rows in range(len(self.matrixA)):
             # Create a thread for each row
-            thread = threading.Thread(target=self.threadedMatrixMultiplication, args=(result, rows, times))
+            thread = threading.Thread(target=self._rowMultiplication, args=(result, rows, times))
             threads.append(thread)
             thread.start()
 
@@ -31,7 +31,7 @@ class MatrixMultiplier:
         return result, times
 
 
-    def threadedMatrixMultiplication(self, result, index, times):
+    def _rowMultiplication(self, result, index, times):
         colA = len(self.matrixA[0])
         colB = len(self.matrixB[0])
 
@@ -46,7 +46,7 @@ class MatrixMultiplier:
         print(f"Thread {index+1} execution time: {times[index]:.6f} seconds")
   
 
-    def seqMatrixMultiplication(self):
+    def sequentialMultiplication(self):
         rowsA = len(self.matrixA)
         colsA = len(self.matrixA[0])
         colsB = len(self.matrixB[0])
@@ -65,7 +65,7 @@ class MatrixMultiplier:
 
     
     @staticmethod
-    def insertData():
+    def inputData():
         matrixA = []
         rowsA = int(input("Enter the number of rows for matrix A: "))
         colsA = int(input("Enter the number of columns for matrix A: "))
@@ -116,7 +116,7 @@ class MatrixMultiplier:
 
 if __name__ == "__main__":
     # Insert data for the matrices
-    matrixA, matrixB = MatrixMultiplier.insertData()
+    matrixA, matrixB = MatrixMultiplier.inputData()
 
     MatrixMultiplier.seperator()
     # Print the matrices
@@ -128,9 +128,9 @@ if __name__ == "__main__":
     
     MatrixMultiplier.seperator()
     # Call the threads function
-    result, times = m.threads()   
+    result, times = m.threadedMultiplication()
     
     MatrixMultiplier.seperator()
     # Call the sequential function
-    m.seqMatrixMultiplication()
+    m.sequentialMultiplication()
     MatrixMultiplier.seperator()
