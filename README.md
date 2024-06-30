@@ -29,5 +29,5 @@ python main.py
 ο σειριακός μπορεί να εκτελεστεί και γρηγορότερα.
 ```
 Μπορείτε να εκτελέσετε και να δείτε τα αποτελέσματα του κώδικα online από αυτόν τον σύνδεσμο:
-https://replit.com/@antonis01/threaded-matrix-multiplication
+https://replit.com/@antonis01/threaded-matrix-multiplication  
 Demo: https://youtu.be/MVly5NCWlHY?si=SiqTb5bpeKBlfoEK
