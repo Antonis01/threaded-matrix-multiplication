@@ -37,8 +37,6 @@ python main.py
 να ολοκληρώσει την πράξη που του ανατέθηκε.
 ```
 ## Links
-```sh
--Μπορείτε να εκτελέσετε και να δείτε τα αποτελέσματα του κώδικα online από αυτόν τον σύνδεσμο:
-https://replit.com/@antonis01/threaded-matrix-multiplication
+-Μπορείτε να εκτελέσετε και να δείτε τα αποτελέσματα του κώδικα online από αυτόν το [replit](https://replit.com/@antonis01/threaded-matrix-multiplication)
 -Demo: [youtube-video](https://youtu.be/MVly5NCWlHY?si=SiqTb5bpeKBlfoEK)
-```
+
