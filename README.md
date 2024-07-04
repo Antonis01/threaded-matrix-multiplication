@@ -1,5 +1,9 @@
 # Threaded Matrix Multiplication
 
+[Οδηγίες](##-Οδηγίες-Εκτέλεσης-Προγράμματος)
+[Τεκμηρίωση](##-Τεκμηρίωση-παράλληλου-χαρακτήρα-της-υλοποίησης)
+[Links](##-Links)
+
 ## Οδηγίες Εκτέλεσης Προγράμματος
 ```sh
 Για την εκτέλεση του κώδικα πρέπει να γράψουμε στο terminal την εντολή:
@@ -37,6 +41,6 @@ python main.py
 να ολοκληρώσει την πράξη που του ανατέθηκε.
 ```
 ## Links
--Online εκτέλεση[replit](https://replit.com/@antonis01/threaded-matrix-multiplication)\
+-Online εκτέλεση: [replit](https://replit.com/@antonis01/threaded-matrix-multiplication)\
 -Demo: [youtube-video](https://youtu.be/MVly5NCWlHY?si=SiqTb5bpeKBlfoEK)
 
